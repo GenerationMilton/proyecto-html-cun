@@ -18,6 +18,7 @@ main{
     width: 100%;
     height: 100%;
     object-fit: contain;
+    margin-top: 20px;
 }
 .info{
     align-self: center;
@@ -106,7 +107,126 @@ main{
     object-fit: contain;
 }
 
+.buscador{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+   
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
 
+.search-box svg {
+    width: 20px;
+    height: 20px;
+    fill: #888;
+    margin-right: 8px;
+}
+
+.search-box input[type="search"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+    
+}
+
+.search-box input::placeholder {
+    color: #aaa;
+}
+
+header {
+    background: #ff8000;
+    color: white;
+    padding: 1rem 2rem;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.banner {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1500px;
+    background: linear-gradient(135deg, #ffcc00, #ff9933);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background: #ff8000;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.4rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
 
 
 
