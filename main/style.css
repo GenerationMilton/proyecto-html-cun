@@ -159,13 +159,13 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.0rem;
 }
 
 .nav-links a {
@@ -228,9 +228,111 @@ footer {
     color: #ffcc00;
 }
 
+/*card Container*/
+.card {
+    width: 320px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/*Food Image*/
+.food-image{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/*Content*/
+.card-content{
+    padding: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/*Price Section*/
+.price-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.discount {
+    font-size: 12px;
+    color: green;
+    background-color: #e7f5e7;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/*Description*/
+.description {
+    font-size: 14px;
+    color:#888;
+    margin-bottom: 5px;
+}
+
+/*Bottom row*/
+.bottom-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef-pick {
+    font-size: 12px;
+    color: #007bff;
+}
+
+.rating {
+    font-size: 12px;
+    color: #f39c12;
+}
+/*heart Icon*/
+.heart {
+    font-size: 18px;
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    background-color: #eaeaea;
+    color: #888;
+    font-size: 14px;
+}
+
+/*Grid Container*/
+.grid-container{
+    display: grid;
+    
+    gap: 35px
+}
+
+/*Column*/
+.grid-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
     .hero{
         grid-template-columns: minmax(300px, 500px);
         justify-content: center;
@@ -242,4 +344,31 @@ footer {
     .dishes-grid{
         grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
     }
+}
+
+/*Grid para pantalla 2*/
+@media (min-width: 768px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media (min-width: 500px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
 }
