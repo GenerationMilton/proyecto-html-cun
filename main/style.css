@@ -228,18 +228,4 @@ footer {
     color: #ffcc00;
 }
 
-
-
-@media screen and (max-width: 768px) {
-    .hero{
-        grid-template-columns: minmax(300px, 500px);
-        justify-content: center;
-
-    }
-    .hero-image{
-        display: none;
-    }
-    .dishes-grid{
-        grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
-    }
-}
+/*estilos agregados*/
