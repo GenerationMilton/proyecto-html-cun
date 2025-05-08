@@ -5,245 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Reservaciones</title>
-    <style>
-        .reservation-container {
-            max-width: 450px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: relative;
-        }
-        
-        .reservation-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .reservation-header h2 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .close-button {
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
-            color: #777;
-        }
-        
-        .reservation-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        
-        .form-group label {
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #333;
-        }
-        
-        .guests-control {
-            display: flex;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .guests-input {
-            flex: 1;
-            padding: 12px 15px;
-            border: none;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-        
-        .guest-button {
-            background-color: #ff8000;
-            color: white;
-            border: none;
-            width: 40px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .guest-button:hover, .guest-button.selected {
-            background-color: #a68157;
-            color: white;
-        }
-        
-        .time-slots {
-            display: grid;
-            grid-template-columns: repeat(4, 3fr);
-            gap: 10px;
-            margin-top: 5px;
-        }
-        
-        .time-slot {
-            padding: 8px 0;
-            text-align: center;
-            border: 1px solid #ff8000;
-            border-radius: 8px;
-            color: #ff8000;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .time-slot:hover, .time-slot.selected {
-            background-color: #ff8000;
-            color: white;
-        }
-        
-        .date-selector {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .month-selector {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .month-dropdown {
-            border: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #333;
-            background: transparent;
-            cursor: pointer;
-            padding: 5px;
-        }
-        
-        .calendar-days {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 4px;
-            margin-top: 10px;
-        }
-        
-        .day-label {
-            text-align: center;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #777;
-            padding: 5px 0;
-        }
-        
-        .calendar-day {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .calendar-day:hover {
-            background-color: #ff8000;
-        }
-        
-        .calendar-day .day-name {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .calendar-day .day-number {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #333;
-        }
-        
-        .calendar-day.selected {
-            background-color: #ff8000;
-        }
-        
-        .calendar-day.selected .day-name,
-        .calendar-day.selected .day-number {
-            color: white;
-        }
-        
-                
-        .footer-buttons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 30px;
-        }
-        
-        .cancel-button {
-            padding: 10px;
-            text-align: center;
-            border: none;
-            border-radius: 11px;
-            color: #777;
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            gap: 5px;
-        }
-
-        .cancel-button:hover, .cancel-button.selected {
-            background-color: #ff8000;
-            color: white;
-        }
-        
-        .confirm-button {
-            padding: 10px;
-            text-align: center;
-            border: none;
-            border-radius: 11px;
-            color: #777;
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            gap: 5px;
-        }
-        
-        .confirm-button:hover, .confirm-button.selected {
-            background-color: #ff8000;
-            color: white;
-        }
-        .banner-image {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 16px 16px 0 0;
-            margin-bottom: 20px;
-        }
-        
-        /* Responsive */
-        @media (max-width: 480px) {
-            .reservation-container {
-                margin: 0;
-                border-radius: 0;
-                min-height: 100vh;
-            }
-        }
-    </style>
+    <title>Reservas</title>
 </head>
 <body>
     <header>
@@ -258,105 +20,107 @@
         </div>
         </nav>
     </header>
-    <main>
-        <div class="reservation-container">
-            <img src="https://media.istockphoto.com/id/1297364206/es/foto/elegante-servicio-de-configuraci%C3%B3n-de-mesa-de-restaurante-para-recepci%C3%B3n-con-tarjeta-reservada.jpg?s=612x612&w=0&k=20&c=TCCZrCxSs8ZtXT71ilkBRdkfIrZtttR3AO7Gz9fAoaU=" alt="Restaurant Illustration" class="banner-image">
-            
-            <div class="reservation-header">
-                <button class="close-button"></button>
-                <h2>Book a Table</h2>
-                <div></div>
-            </div>
-            
-            <div class="reservation-form">
-                <div class="form-group">
-                    <label for="guests">Cantidad de visitantes</label>
-                    <div class="guests-control">
-                        <button class="guest-button">−</button>
-                        <input type="text" class="guests-input" value="" readonly>
-                        <button class="guest-button">+</button>
-                    </div>
+        <body>
+        <main>
+            <div class="reservation-container">
+                <img src="https://media.istockphoto.com/id/1297364206/es/foto/elegante-servicio-de-configuraci%C3%B3n-de-mesa-de-restaurante-para-recepci%C3%B3n-con-tarjeta-reservada.jpg?s=612x612&w=0&k=20&c=TCCZrCxSs8ZtXT71ilkBRdkfIrZtttR3AO7Gz9fAoaU=" alt="Restaurant Illustration" class="banner-image">
+                
+                <div class="reservation-header">
+                    <button class="close-button"></button>
+                    <h2>Book a Table</h2>
+                    <div></div>
                 </div>
                 
-                <div class="form-group">
-                    <label>Seleccione hora de la reserva</label>
-                    <div class="time-slots">
-                        <div class="time-slot">15:00</div>
-                        <div class="time-slot">15:30</div>
-                        <div class="time-slot">16:00</div>
-                        <div class="time-slot">16:30</div>
-                        <div class="time-slot">17:00</div>
-                        <div class="time-slot">17:30</div>
-                        <div class="time-slot">18:00</div>
-                        <div class="time-slot">18:30</div>
-                        <div class="time-slot">19:00</div>
-                        <div class="time-slot">19:30</div>
-                        <div class="time-slot">20:00</div>
-                        <div class="time-slot">20:30</div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <div class="date-selector">
-                        <label>Fecha</label>
-                        <div class="month-selector">
-                            <div></div>
-                            <select class="month-dropdown">
-                                <option>Enero</option>
-                                <option>Febrero</option>
-                                <option>Marzo</option>
-                                <option>Abril</option>
-                                <option>Mayo</option>
-                                <option>Junio</option>
-                                <option>Julio</option>
-                                <option>Agosto</option>
-                                <option>Septiembre</option>
-                                <option>Octubre</option>
-                                <option>Noviembre</option>
-                                <option>Abril</option>
-                            </select>
-                        </div>
-                        
-                        <div class="calendar-days">
-                            <div class="calendar-day">
-                                <span class="day-name">Fri</span>
-                                <span class="day-number">03</span>
-                            </div>
-                            <div class="calendar-day" onclick="selectDate(this)">
-                                <span class="day-name">Sat</span>
-                                <span class="day-number">04</span>
-                            </div>
-                            <div class="calendar-day" onclick="selectDate(this)">
-                                <span class="day-name">Sun</span>
-                                <span class="day-number">05</span>
-                            </div>
-                            <div class="calendar-day" onclick="selectDate(this)">
-                                <span class="day-name">Mon</span>
-                                <span class="day-number">06</span>
-                            </div>
-                            <div class="calendar-day" onclick="selectDate(this)">
-                                <span class="day-name">Tue</span>
-                                <span class="day-number">07</span>
-                            </div>
-                            <div class="calendar-day" onclick="selectDate(this)">
-                                <span class="day-name">Wed</span>
-                                <span class="day-number">08</span>
-                            </div>
-                            <div class="calendar-day" onclick="selectDate(this)">
-                                <span class="day-name">Thu</span>
-                                <span class="day-number">09</span>
-                            </div>
+                <div class="reservation-form">
+                    <div class="form-group">
+                        <label for="guests">Cantidad de visitantes</label>
+                        <div class="guests-control">
+                            <button class="guest-button">−</button>
+                            <input type="text" class="guests-input" value="" readonly>
+                            <button class="guest-button">+</button>
                         </div>
                     </div>
-                </div>
-                
-                <div class="footer-buttons">
-                    <button class="cancel-button">Cancel </button>
-                    <button class="confirm-button">Confirm <i class="fas fa-shopping-cart"></i></button>
+                    
+                    <div class="form-group">
+                        <label>Seleccione hora de la reserva</label>
+                        <div class="time-slots">
+                            <div class="time-slot">15:00</div>
+                            <div class="time-slot">15:30</div>
+                            <div class="time-slot">16:00</div>
+                            <div class="time-slot">16:30</div>
+                            <div class="time-slot">17:00</div>
+                            <div class="time-slot">17:30</div>
+                            <div class="time-slot">18:00</div>
+                            <div class="time-slot">18:30</div>
+                            <div class="time-slot">19:00</div>
+                            <div class="time-slot">19:30</div>
+                            <div class="time-slot">20:00</div>
+                            <div class="time-slot">20:30</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="date-selector">
+                            <label>Fecha</label>
+                            <div class="month-selector">
+                                <div></div>
+                                <select class="month-dropdown">
+                                    <option>Enero</option>
+                                    <option>Febrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubre</option>
+                                    <option>Noviembre</option>
+                                    <option>Abril</option>
+                                </select>
+                            </div>
+                            
+                            <div class="calendar-days">
+                                <div class="calendar-day">
+                                    <span class="day-name">Lun</span>
+                                    <span class="day-number">03</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Mar</span>
+                                    <span class="day-number">04</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Mie</span>
+                                    <span class="day-number">05</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Jue</span>
+                                    <span class="day-number">06</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Vie</span>
+                                    <span class="day-number">07</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Sab</span>
+                                    <span class="day-number">08</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Dom</span>
+                                    <span class="day-number">09</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-buttons">
+                        <button class="cancel-button">Cancel </button>
+                        <button class="confirm-button">Confirm <i class="fas fa-shopping-cart"></i></button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+        </body>
     <footer>
         <p>Síguenos en nuestras redes sociales</p>
         <div class="social-icons">
