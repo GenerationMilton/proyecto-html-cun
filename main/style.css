@@ -380,7 +380,92 @@ footer {
     margin-left: 15px;
   }
   
-
+  .dessert-divider {
+    border: none;
+    height: 6px;
+    background-color: #fca311;
+    margin: 60px auto 20px;
+    width: 80%;
+    border-radius: 10px;
+  }
+  
+  .dessert-heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+  }
+  
+  .desserts-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+  }
+  
+  .dessert-item {
+    background-color: #f7f7f7;
+    border-radius: 18px;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dessert-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .dessert-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .dessert-text {
+    flex: 1;
+    font-family: sans-serif;
+  }
+  
+  .title-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #444;
+  }
+  
+  .price {
+    color: orange;
+    font-weight: bold;
+  }
+  .extras-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .vertical-divider {
+    width: 6px;
+    background-color: orange;
+    height: auto;
+    min-height: 1200px;
+    border-radius: 3px;
+  }
+  
 
 @media screen and (max-width: 768px) {
     .hero{
