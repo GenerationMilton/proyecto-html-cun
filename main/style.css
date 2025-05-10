@@ -380,6 +380,364 @@ h3 {
     }
 }
 
+/*Estilos carlos*/
+/*estilos agregados para reservaciones*/
+
+.reservation-container {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.reservation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.reservation-header h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #777;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.guests-control {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.guests-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.guest-button {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    width: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.guest-button:hover, .guest-button.selected {
+    background-color: rgba(255, 128, 0, 0.1);
+    color: white;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.time-slot {
+    padding: 8px 0;
+    text-align: center;
+    border: 1px solid #ff8000;
+    border-radius: 8px;
+    color: #ff8000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.time-slot:hover, .time-slot.selected {
+    background-color: #ff8000;
+    color: white;
+}
+
+.date-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.month-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-dropdown {
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-top: 10px;
+}
+
+.day-label {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #777;
+    padding: 5px 0;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.calendar-day:hover {
+    background-color: #ff8000;
+}
+
+.calendar-day .day-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.calendar-day .day-number {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.calendar-day.selected {
+    background-color: #ff8000;
+}
+
+.calendar-day.selected .day-name,
+.calendar-day.selected .day-number {
+    color: white;
+}
+
+        
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cancel-button {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 11px;
+    color: #777;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    gap: 5px;
+}
+
+.cancel-button:hover, .cancel-button.selected {
+    background-color: #ff8000;
+    color: white;
+}
+
+.confirm-button {
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 11px;
+    color: #777;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    gap: 5px;
+}
+
+.confirm-button:hover, .confirm-button.selected {
+    background-color: #ff8000;
+    color: white;
+}
+.banner-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos adicionales para las categorías */
+.category-section {
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header i {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.section-header h2 {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.food-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.food-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.food-item img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.food-item p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-button {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: #333;
+}
+.category-button:hover {
+    background-color: #ff8000;
+    color: white;
+}
+
+
+.trending-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+.trending-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.trending-item img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.trending-item img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f1c40f;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerPlatillo {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1500px;
+    background: linear-gradient(135deg, #ffcc00, #ff9933);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.bannerPlatillo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 
 /* --- Responsive para móviles --- */
 @media (max-width: 768px) {

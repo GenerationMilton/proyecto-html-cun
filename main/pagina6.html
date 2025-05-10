@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI DOCUMENTO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Reservas</title>
 </head>
 <body>
-    
-</body>
+    <header>
+        <nav>
+        <div class="logo">🍽️ Restaurante de los devs</div>
+        <div class="nav-links">
+            <a href="pagina2.html"><i class="fas fa-utensils"></i> Platos</a>
+            <a href="pagina3.html"><i class="fas fa-tags"></i> Acompañantes</a>
+            <a href="pagina5.html"><i class="fas fa-info-circle"></i>Productos</a>
+            <a href="pagina6.html"><i class="fas fa-envelope"></i> Haz tu Pedido</a>
+            <a href="pagina4.html"><i class="fas fa-envelope"></i> Contactenos</a>
+        </div>
+        </nav>
+    </header>
+        <body>
+        <main>
+            <div class="reservation-container">
+                <img src="https://media.istockphoto.com/id/1297364206/es/foto/elegante-servicio-de-configuraci%C3%B3n-de-mesa-de-restaurante-para-recepci%C3%B3n-con-tarjeta-reservada.jpg?s=612x612&w=0&k=20&c=TCCZrCxSs8ZtXT71ilkBRdkfIrZtttR3AO7Gz9fAoaU=" alt="Restaurant Illustration" class="banner-image">
+                
+                <div class="reservation-header">
+                    <button class="close-button"></button>
+                    <h2>Book a Table</h2>
+                    <div></div>
+                </div>
+                
+                <div class="reservation-form">
+                    <div class="form-group">
+                        <label for="guests">Cantidad de visitantes</label>
+                        <div class="guests-control">
+                            <button class="guest-button">−</button>
+                            <input type="text" class="guests-input" value="" readonly>
+                            <button class="guest-button">+</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Seleccione hora de la reserva</label>
+                        <div class="time-slots">
+                            <div class="time-slot">15:00</div>
+                            <div class="time-slot">15:30</div>
+                            <div class="time-slot">16:00</div>
+                            <div class="time-slot">16:30</div>
+                            <div class="time-slot">17:00</div>
+                            <div class="time-slot">17:30</div>
+                            <div class="time-slot">18:00</div>
+                            <div class="time-slot">18:30</div>
+                            <div class="time-slot">19:00</div>
+                            <div class="time-slot">19:30</div>
+                            <div class="time-slot">20:00</div>
+                            <div class="time-slot">20:30</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="date-selector">
+                            <label>Fecha</label>
+                            <div class="month-selector">
+                                <div></div>
+                                <select class="month-dropdown">
+                                    <option>Enero</option>
+                                    <option>Febrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubre</option>
+                                    <option>Noviembre</option>
+                                    <option>Abril</option>
+                                </select>
+                            </div>
+                            
+                            <div class="calendar-days">
+                                <div class="calendar-day">
+                                    <span class="day-name">Lun</span>
+                                    <span class="day-number">03</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Mar</span>
+                                    <span class="day-number">04</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Mie</span>
+                                    <span class="day-number">05</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Jue</span>
+                                    <span class="day-number">06</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Vie</span>
+                                    <span class="day-number">07</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Sab</span>
+                                    <span class="day-number">08</span>
+                                </div>
+                                <div class="calendar-day">
+                                    <span class="day-name">Dom</span>
+                                    <span class="day-number">09</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-buttons">
+                        <button class="cancel-button">Cancel </button>
+                        <button class="confirm-button">Confirm <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        </body>
+    <footer>
+        <p>Síguenos en nuestras redes sociales</p>
+        <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer
 </html>
