@@ -1,13 +1,13 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-
+/*Estilos del main de la aplicacion*/
 main{
     max-width: 1200px;
     margin: 0 auto;
 }
 
-
+/*Estilos para la imagen principal del homepage*/
 .hero{
   display: flex;
   justify-content: space-between;
@@ -18,6 +18,8 @@ main{
   flex-wrap: wrap;
 }
 
+
+/*Estilos para la imagen principal del homepage*/
 .hero-image{
     width: 100%;
     max-width: 600px;
@@ -25,10 +27,14 @@ main{
     object-fit: cover;
     border-radius: 15px;
 }
+
+/*Estilos para la imagen principal del homepage*/
 .info{
     max-width: 500px;
 }
 
+
+/*Estilos para el titulo del homepage*/
 .info-title{
     color: #333;
     font-size: 3rem;
@@ -36,12 +42,15 @@ main{
     margin-bottom: 24px;
 }
 
+
+/*Estilos para el subtitulo del homepage*/
 .info-subtitle{
     color: #333;
     font-size: 1.5rem;
     margin-bottom: 24px;
 }
 
+/*Estilos para el button del homepage*/
 .info-button{
     border: none;
     border-radius: 20px;
@@ -51,10 +60,12 @@ main{
     padding: 12px 24px;
 }
 
+/*Estilos para los platos del homepage*/
 .dishes{
     margin: 100px 0;
 }
 
+/*Estilos para los titulos de los platos del homepage*/
 .dishes-title{
     color: #333;
     font-weight: bold;
@@ -63,6 +74,7 @@ main{
     font-size: 2rem;
 }
 
+/*Estilos para el grid de platos del homepage*/
 .dishes-grid{
    
     display :grid;
@@ -72,20 +84,24 @@ main{
     justify-content: center;
 }
 
+/*Estilos para el item de platos del homepage*/
 .dishes-item{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/*Estilos para el item de platos del homepage*/
 .dishes-item__big{
     grid-area: 1 / 1 / 3 / 3;
 }
 
+/*Estilos para el menu de platos del homepage*/
 .menu{
     margin-bottom: 200px;
 }
 
+/*Estilos para el menu de platos del homepage*/
 .menu-title{
     font-size: 2rem;
     color: #333;
@@ -93,31 +109,35 @@ main{
     text-align: center;
     margin-bottom: 50px;
 }
-
+/*Estilos para el menu de platos del homepage*/
 .menu-grid{
     display: grid;
     gap: 25px;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 150px);
 }
-
+/*Estilos para el menu de platos del homepage*/
 .menu-grid-item{
     background-color: coral;
     padding: 15px;
     border-top-left-radius: 40px;
 }
+/*Estilos para el menu de platos del homepage*/
 .menu-grid-item img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+/*Estilos para el buscador de platos del homepage*/
 .buscador{
     display: flex;
     width: 20px;
     height: 20px;
     
 }
+
+/*Estilos para el buscador de platos del homepage*/
 .search-box {
     display: flex;
     align-items: center;
@@ -129,6 +149,7 @@ main{
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+/*Estilos para el buscador de platos del homepage*/
 .search-box svg {
     width: 20px;
     height: 20px;
@@ -136,6 +157,7 @@ main{
     margin-right: 8px;
 }
 
+/*Estilos para el buscador de platos del homepage*/
 .search-box input[type="search"] {
     border: none;
     outline: none;
@@ -145,34 +167,37 @@ main{
     
 }
 
+/*Estilos para el buscador de platos del homepage*/
 .search-box input::placeholder {
     color: #aaa;
 }
 
+/*Estilos para el header de la aplicacion*/
 header {
     background: #ff8000;
     color: white;
     padding: 1rem 2rem;
     margin-bottom: 20px;
 }
-
+/*Estilos para el header de la aplicacion*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-
+/*Estilos para el logo de la aplicacion*/
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+/*Estilos para el nav de los headers de la aplicacion*/
 .nav-links {
     display: flex;
     gap: 1rem;
 }
 
+/*Estilos para el nav y links de los headers de la aplicacion*/
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -182,11 +207,11 @@ nav {
     gap: 0.5rem;
     transition: color 0.3s;
 }
-
+/*Estilos para el nav y links de los headers de la aplicacion*/
 .nav-links a:hover {
     color: #ffcc00;
 }
-
+/*Estilos para el banner de la aplicacion*/
 .banner {
     margin: 2rem auto;
     padding: 2rem;
@@ -197,17 +222,17 @@ nav {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     color: #222;
 }
-
+/*Estilos para el banner de la aplicacion*/
 .banner h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
+/*Estilos para el banner de la aplicacion*/
 .banner p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
-
+/*Estilos para el footer de la aplicacion*/
 footer {
     background: #ff8000;
     color: white;
@@ -216,24 +241,24 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
+/*Estilos para los iconos del footer de la aplicacion*/
 .social-icons {
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
 }
-
+/*Estilos para los iconos del footer de la aplicacion*/
 .social-icons a {
     color: white;
     font-size: 1.4rem;
     transition: color 0.3s;
 }
-
+/*Estilos para los iconos del footer de la aplicacion*/
 .social-icons a:hover {
     color: #ffcc00;
 }
 
-/*card Container*/
+/*Estilos para  card Container*/
 .card {
     width: 320px;
     border-radius: 8px;
@@ -243,14 +268,14 @@ footer {
     position: relative;
 }
 
-/*Food Image*/
+/*Estilos para  Food Image*/
 .food-image{
     width: 100%;
     height: 140px;
     object-fit: cover;
 }
 
-/*Content*/
+/*Estilos para Content*/
 .card-content{
     padding: 10px;
 }
@@ -260,19 +285,19 @@ h3 {
     margin: 5px 0;
 }
 
-/*Price Section*/
+/*Estilos para  Price Section*/
 .price-section{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
-
+/*Estilos para price de las cards*/
 .price {
     font-size: 16px;
     font-weight: bold;
     color: #333;
 }
-
+/*Estilos para descuento de las cards*/
 .discount {
     font-size: 12px;
     color: green;
@@ -281,36 +306,37 @@ h3 {
     border-radius: 4px;
 }
 
-/*Description*/
+/*Estilos para la Description*/
 .description {
     font-size: 14px;
     color:#888;
     margin-bottom: 5px;
 }
 
-/*Bottom row*/
+/*Estilos para el Bottom row*/
 .bottom-row{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*Estilos para chef-pic del de las cards*/
 .chef-pick {
     font-size: 12px;
     color: #007bff;
 }
-
+/*Estilos para rating del de las cards*/
 .rating {
     font-size: 12px;
     color: #f39c12;
 }
-/*heart Icon*/
+/*Estilos para el corazon en heart Icon de las cards*/
 .heart {
     font-size: 18px;
     color: #e74c3c;
     cursor: pointer;
 }
-
+/*Estilos para cel placeholder*/
 .placeholder {
     display: flex;
     justify-content: center;
@@ -321,7 +347,7 @@ h3 {
     font-size: 14px;
 }
 
-/*Grid Container*/
+/*Estilos para el Grid Container*/
 .grid-container{
     display: grid;
     gap: 20px;
@@ -331,7 +357,7 @@ h3 {
     padding: 10px;
 }
 
-/*Column*/
+/*Estilos paraColumn*/
 .grid-column{
     display: flex;
     flex-direction: column;
@@ -339,7 +365,7 @@ h3 {
 }
 
 
-
+/*Estilos para grid y flex y responsive de la aplicacion*/
 @media screen and (min-width: 768px) {
     .hero {
         flex-direction: column;
@@ -354,32 +380,6 @@ h3 {
     }
 }
 
-/*Grid para pantalla 2*/
-/* @media (min-width: 768px) {
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
-
-}
-@media (min-width: 500px) {
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-@media (min-width: 900px) {
-    .grid-container{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    .grid-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-} */
 
 /* --- Responsive para móviles --- */
 @media (max-width: 768px) {
